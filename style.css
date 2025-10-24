@@ -1,0 +1,96 @@
+body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 32px;
+      background: #fff;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .navbar .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .navbar .mainMenu ul{
+      display: flex;
+      gap: 32px;
+      list-style: none;      
+      color: #3a3a3a;
+      font-size: 1rem;
+      margin: 0 5px;
+      transition: color .2s;
+    }
+    .navbar .mainMenu :hover {
+      color: #007cff;
+    }
+    .navbar .username-btn {
+      background: #e3f2fd;
+      color: #1490ff;
+      border: none;
+      border-radius: 8px;
+      padding: 7px 22px;
+      font-size: .96rem;
+      cursor: pointer;
+    }
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 82vh;
+      gap: 30px;
+      padding: 40px 16px;
+      box-sizing: border-box;
+    }
+    .text-section {
+      max-width: 500px;
+    }
+    .text-section h1 {
+      font-size: 2.2rem;
+      margin: 0 0 10px 0;
+      font-weight: 700;
+      color: #252525;
+    }
+    
+    .text-section p {
+      font-size: 1.04rem;
+      color: #535353;
+      margin-bottom: 32px;
+      margin-right: 25px;
+      max-width: 420px;
+    }
+    .cta-btn {
+      background: #2196f3;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 34px;
+      cursor: pointer;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      box-shadow: 0 3px 20px 1px #e3f2fd44;
+    }
+    .cta-btn:hover {
+      background: #1566ca;
+    }
+    .img-section img {
+      max-width: 500px;
+      height: auto;
+      border-radius: 17px;
+      background: #f5f7fa;
+    }
+    @media (max-width: 800px) {
+      .main-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .img-section img {
+        margin-top: 25px;
+      }
+    }
